@@ -1,0 +1,32 @@
+<div class="data-list-container">
+    <h2>Data List</h2>
+    <button id="create" routerLink="/create-or-modify">Add Record</button>
+    <!-- Table to display data -->
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of (data | async)">
+          <td>{{ record.id }}</td>
+          <td>{{ record.name }}</td>
+          <td>{{ record.email }}</td>
+          <td>{{ record.phone }}</td>
+          <td>{{ record.city }}</td>
+          <td>
+             <button style="margin: .5rem;" (click)="deleteRecord(record.id)">Delete</button>
+             <button style="background-color: green;margin: .5rem;" routerLink="/create-or-modify" [queryParams]="{'id':record.id}">Modify</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  
