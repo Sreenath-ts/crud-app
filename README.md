@@ -37,7 +37,30 @@ Follow the steps below to kickstart your journey with this captivating project:
 ## Usage
 Once your backend and frontend enchantments are ready, you can unlock the portal's gate by visiting the specified URL http://localhost:4200. The CSV file, with its captivating data, will be at your command.
 
-## Testing
-The unit tests for the backend are a secret challenge, like hidden treasures waiting to be discovered. To unveil their power, you can employ a test runner like Mocha and Chai. For the exact instructions to unlock these secrets, refer to the backend's documentation.
+# Backend API Unit Tests
+
+This repository contains unit tests for the backend API of your application. These tests ensure that your API endpoints and controller functions work correctly.
+
+## Prerequisites
+
+Before running the tests, make sure you have the following installed:
+
+- Node.js
+- npm (Node Package Manager)
+- Mocha
+- Chai
+- Supertest
+
+You can install the required packages by running the following command:
+
+```bash
+npm install
+
+**Run the Tests**
+
+To run the tests, use the following command in your terminal:
+
+```bash
+npm test
 
 
